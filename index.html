@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow Candles</title>
+  <!-- Link to Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body style="font-family:'Lucida Sans', 'Lucida Sans Regular', Geneva, sans-serif;">
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:#f4e1c1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Glow Candles</a>
+      <img src="Logos/headerLogo.png" style="height: 5vh;" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Body Content -->
+  <div class="container-fluid mt-5 p-5" id="products" style="background-color: #f9f3e6;">
+    <div class="row">
+      <!-- Carousel for Image -->
+      <div class="col-md-6">
+        <div id="productImageCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- First Image -->
+            <div class="carousel-item active">
+              <img src="images/pexels-andrzej-gdula-177638374-12572319.jpg" class="d-block w-100" alt="Candle">
+            </div>
+            <!-- Second Image -->
+            <div class="carousel-item">
+              <img src="images/pexels-andrzej-gdula-177638374-12336392.jpg" class="d-block w-100" alt="Candle 2">
+            </div>
+            <!-- Third Image -->
+            <div class="carousel-item">
+              <img src="images/pexels-andrzej-gdula-177638374-12572310.jpg" class="d-block w-100" alt="Candle 3">
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#productImageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productImageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Text Section on the Right -->
+      <div class="col-md-6 ms-6 p-5">
+        <h2 class="text-center" style="color: #3e2a47;">Welcome to Glow Candles</h2>
+        <p class="me-5 mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora harum sequi distinctio perspiciatis. Dolores, accusantium. Voluptatum veniam magni minus asperiores iure, ipsa commodi quia ullam, porro aliquam aliquid voluptatibus facere accusamus sequi eveniet, deserunt quis vel dicta a dolore. Explicabo autem dolorem in accusamus amet nisi ea doloremque neque atque iusto soluta, velit recusandae accusantium, illo earum suscipit placeat saepe beatae! Eius, nesciunt? Enim, doloremque officiis ratione qui sunt itaque excepturi repudiandae aliquam dicta repellendus eveniet voluptatibus aspernatur modi delectus assumenda unde quaerat provident facere eos cupiditate quis! Nostrum quaerat ad molestias quo, labore temporibus quos at officiis sed non.</p>
+      </div>
+    </div>
+  </div>
+  <!--Products-->
+  <section class="py-5" style="background-color: #f4e1c1;">
+    <div class="container">
+      <h2 class="text-center mb-5" style="color: #3e2a47;">Our Products</h2>
+      <div class="row d-flex justify-content-center">
+        <!-- Product 1 Card -->
+        <div class="d-flex justify-content-center col-md-4 col-12 mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="images/pexels-andrzej-gdula-177638374-12336395.jpg" class="card-img-top" alt="Lavender Candle">
+            <div class="card-body">
+              <h5 class="card-title">Lavender Candle</h5>
+              <p class="card-text">A calming blend of lavender essential oil.</p>
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" style="background-color: #f4a261;">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 2 Card -->
+        <div class="d-flex justify-content-center col-md-4 col-12 mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="images/pexels-andrzej-gdula-177638374-11159158.jpg" class="card-img-top" alt="Energizing Citrus">
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-between">
+                Energizing Citrus
+                <span class="badge rounded-pill bg-danger">New</span>
+              </h5>
+              <p class="card-text">Zesty citrus notes to invigorate your senses.</p>
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" style="background-color: #f4a261;">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 3 Card -->
+        <div class="d-flex justify-content-center col-md-4 col-12 mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="images/pexels-andrzej-gdula-177638374-12256509.jpg" class="card-img-top" alt="Warm Vanilla">
+            <div class="card-body">
+              <h5 class="card-title">Warm Vanilla</h5>
+              <p class="card-text">Rich vanilla bean aroma for a cozy atmosphere.</p>
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" style="background-color: #f4a261;">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--About-->
+  <section id="about" class="py-5" style="background-color: #f9f3e6;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 style="color: #3e2a47;">About Us</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel sunt commodi, officiis animi recusandae consequatur soluta distinctio adipisci libero, aperiam possimus itaque saepe, nostrum odio modi unde quas impedit fugit. 
+            Vero sed officia reiciendis laudantium, quam enim libero voluptatem pariatur id neque, mollitia nobis porro, non ullam esse officiis maxime blanditiis. Corrupti, qui ad dolores quam aliquam consequuntur quis necessitatibus 
+            sequi soluta aut sit a! Magnam obcaecati, alias distinctio nesciunt dolor explicabo tenetur fugiat, magni natus repellat corrupti officiis eos aspernatur! Rerum, corrupti quae amet libero accusamus ipsam! Aliquid, perferendis! 
+            Nobis quibusdam dicta aut molestiae est distinctio quidem? Voluptatum, possimus.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="Logos/aboutLogo.png" alt="About Us" class="img-fluid" style="height: 25vh; padding-left: 8vw ;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--FAQs-->
+<div class="py-5" style="background-color: #f9f3e6;">
+  <div class="container">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="color: #3e2a47;">
+            Frequently Asked Question #1
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae itaque veritatis, ab perspiciatis fugiat exercitationem enim quae similique omnis? Delectus ducimus velit, 
+            ut nobis odit similique cum dolorem perferendis? Nisi consequatur maxime impedit, nam, pariatur quasi architecto deleniti officia dolore non velit quibusdam cum mollitia ad, eius alias unde vel.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="color: #3e2a47;">
+            Frequently Asked Question #2
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quibusdam tempora id alias labore sed laborum perferendis aut. Odit fugiat, maiores accusamus et commodi cupiditate autem omnis porro ratione iusto voluptatibus, 
+            deleniti vel quis exercitationem atque molestiae placeat hic asperiores? Ab placeat libero hic laboriosam ducimus dolor minima. Vero officiis maxime rerum ad temporibus. Odio nemo dolor ex animi ad aliquam accusantium officiis, ullam 
+            cumque sed magni error accusamus obcaecati libero minima ratione suscipit sint voluptatem nostrum nulla unde ea quibusdam deserunt delectus. Mollitia, accusantium porro. Praesentium rem rerum velit!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="color: #3e2a47;">
+            Frequently Asked Question #3
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error earum quibusdam dolor, optio quidem impedit culpa quos consequuntur, mollitia sunt debitis asperiores soluta accusamus omnis minus. Illo consequuntur excepturi dolorum 
+            labore id perspiciatis sed, facilis rem, quisquam, possimus voluptatem minus aut praesentium. Quo illo, optio explicabo sapiente similique amet quasi eligendi harum deserunt cum quod.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--contact-->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 style="color: #3e2a47;">Contact Us</h2>
+          <p>Reach out if you have any other Enquiries</p>
+          <ul class="list-unstyled">
+            <li><strong>Phone:</strong>01382 383000</li>
+            <li><strong>Email:</strong> info@Glowcandles.com</li>
+            <li><strong>Address:</strong> Nethergate, Dundee DD1 4HN</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalContact" style="background-color: #f4a261;">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal, to be used when product button is clicked-->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">New scents coming soon...</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Pages about specific candle scents can are currently under maintenence (lie)</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal, to be used when contact form is used-->
+    <div class="modal fade" id="exampleModalContact" tabindex="-1" aria-labelledby="exampleModalContactTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalContactTitle">Thank you for your message!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Your message has been forwarded to one of our team members. Please keep an eye on your provided email address as this is where we will contact you back. Thank you for your patience whilst we get back to you.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>Glow Candles</p>
+    <a href="https://www.youtube.com/watch?v=ezRpz5g0Hj0" style="color: #f4a261;">Watch some guy make candles</a>
+  </footer>
+</body>
+</html>
